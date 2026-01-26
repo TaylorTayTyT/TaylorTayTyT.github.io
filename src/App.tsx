@@ -21,7 +21,7 @@ function App() {
 					about me
 				</div>
 				<div className='info'>
-					Put shortly, I'm an audiobook narrator/voiceover artist.
+					Hi, I'm Taylor Nguyen! I'm an audiobook narrator/voiceover artist.
 					Look at my demos to see how my voice could fit into your project!
 				</div>
 				<div id="more_info">
