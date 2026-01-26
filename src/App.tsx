@@ -8,10 +8,19 @@ function App() {
 
 	const urls = [
 		['/pj.mp3', "FANTASY, TEENAGER, SARCASTIC, PERCY JACKSON"],
+		['/on earth trevor.mp3', "FICTION, TEENAGER, LGBTQ, EXPLICIT, ON EARTH WE'RE BREIFLY GORGEOUS"],
+		['/bellies.mp3', "FICTION, LGBTQ, ROMANCE, BELLIES"],
+		['jade city.mp3', "FANTASY, URBAN, MULTIPLE CHARACTERS, JADE CITY"],
 		['/the shining.mp3', "HORROR, CHILD, ADULT, THE SHINING"],
 		['/mountain.mp3', "FICTION, VIETNAMESE, STORYTELLER, THE MOUNTAINS SING"],
+		['/a horse.mp3', "FICTION, SARCASTIC, LOUD, A HORSE WALKS INTO A BAR"],
 		['/war.mp3', "HISTORY, INFORMATIVE, THE THIRTY YEARS WAR"]
 	]
+	urls.sort((a, b) => {
+		if (a[1] > b[1]) return 1
+		else if (a[1] < b[1]) return -1
+		return 0
+	});
 
 
 	return (
