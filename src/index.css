@@ -1,0 +1,83 @@
+.abel-regular {
+	font-family: "Abel", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.special-gothic-condensed-one-regular {
+	font-family: "Special Gothic Condensed One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.info {
+	font-family: "Abel", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2rem;
+	text-align: center;
+	overflow-wrap: break-word;
+}
+
+.header {
+	font-family: "Special Gothic Condensed One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 4rem;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#container {
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+@media screen and (width <=900px) {
+	#container {
+		display: block;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+
+#about {
+	border-right: solid 1px black;
+	padding-right: 1rem;
+	width: 70%
+}
+
+@media screen and (width <=900px) {
+	#about {
+		border: none;
+		margin: auto;
+		padding-right: 1rem;
+		width: 70%
+	}
+}
+
+#more_info {
+	padding-top: 5rem
+}
+
+@media screen and (width <=900px) {
+	#more_info {
+		display: block;
+		justify-content: space-between;
+		padding-top: 5rem;
+		flex-wrap: wrap;
+	}
+}
+
+#demos {
+	padding-left: 1rem;
+}
+
+figcaption {
+	font-size: 1rem;
+}
