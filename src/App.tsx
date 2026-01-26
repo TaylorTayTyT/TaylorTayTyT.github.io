@@ -1,12 +1,11 @@
-import { useEffect, useRef, useState, useMemo } from 'react';
+
 import './App.css';
-import WaveSurfer from 'wavesurfer.js';
-import TimelinePlugin from 'wavesurfer.js/dist/plugins/timeline.js';
+
 
 
 function App() {
 
-	const wsRef = useRef(null);
+
 	const urls = [
 		['/pj.mp3', "FANTASY, TEENAGER, SARCASTIC, PERCY JACKSON"],
 		['/the shining.mp3', "HORROR, CHILD, ADULT, THE SHINING"],
