@@ -56,6 +56,19 @@ function App() {
 							</li>
 						</ul>
 					</div>
+					<div id="recent_work">
+						<div className='header'>recent works</div>
+						<ul className='info'>
+							<li>Haunted Hearts by Lucas Mangum</li>
+						</ul>
+					</div>
+					<div id="upcoming work">
+						<div className='header'>upcoming works</div>
+						<ul className='info'>
+							<li>If You Touch the Sun by Josi B</li>
+							<li>Maranther's Deception by Nik Colyer</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div id="demos">
@@ -73,7 +86,6 @@ function App() {
 					})}
 
 				</ul>
-				<div id="waveform"></div>
 			</div>
 		</div>
 	)
