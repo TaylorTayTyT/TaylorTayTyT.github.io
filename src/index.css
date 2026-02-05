@@ -81,3 +81,13 @@ ul {
 figcaption {
 	font-size: 1rem;
 }
+
+img.work {
+	width: 10rem;
+	padding: 1rem;
+
+}
+
+.works {
+	gap: 1rem;
+}
