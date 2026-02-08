@@ -23,7 +23,7 @@ function App() {
 	});
 
 	const works = [
-		["/M&S Audio.jpg", "https://www.amazon.com/dp/B0FX7BSC1L"],
+		["/M&S Audio.jpg", "https://www.audible.com/pd/B0GM3FSHD5?qid=1770517816&sr=1-1&ref_pageloadid=not_applicable&pf_rd_p=83218cca-c308-412f-bfcf-90198b687a2f&pf_rd_r=WVE85H73D88WHPG9GTS6&plink=Pn0gtZYjhRIN0LSP&pageLoadId=0L5njSNiA6saZbpu&creativeId=0d6f6720-f41c-457e-a42b-8c8dceb62f2c&ref=a_search_c3_lProduct_1_1"],
 		["/Haunted_Hearts.jpg", "https://www.audible.com/pd/Haunted-Hearts-Audiobook/B0GHSLP2SH?qid=1770268669&sr=1-1&ref_pageloadid=not_applicable&pf_rd_p=83218cca-c308-412f-bfcf-90198b687a2f&pf_rd_r=MMS796Y1T8ACKAP4DHA6&plink=95QMcA9DbvsSt7aa&pageLoadId=KqWCYyC4KpFwoCIP&creativeId=0d6f6720-f41c-457e-a42b-8c8dceb62f2c&ref=a_search_c3_lProduct_1_1"]
 	]
 
