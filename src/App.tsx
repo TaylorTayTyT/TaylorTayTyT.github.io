@@ -7,14 +7,14 @@ function App() {
 
 
 	const urls = [
-		['/pj.mp3', "1M, FANTASY, TEENAGER, SARCASTIC, PERCY JACKSON"],
-		['/on earth trevor.mp3', "1M, FICTION, TEENAGER, LGBTQ, EXPLICIT, ON EARTH WE'RE BREIFLY GORGEOUS"],
-		['/bellies.mp3', "2M, FICTION, LGBTQ, ROMANCE, BELLIES"],
-		['jade city.mp3', "3M, FANTASY, URBAN, MULTIPLE CHARACTERS, JADE CITY"],
-		['/the shining.mp3', "1M CHILD 1M ADULT, HORROR, CHILD, ADULT, THE SHINING"],
-		['/mountain.mp3', "1F ADULT 1F ELDER, FICTION, VIETNAMESE, STORYTELLER, THE MOUNTAINS SING"],
-		['/a horse.mp3', "1M ADULT, FICTION, SARCASTIC, LOUD, A HORSE WALKS INTO A BAR"],
-		['/spain.mp3', "HISTORY, INFORMATIVE, THE THIRTY YEARS WAR"]
+		['american.mp3', "HISTORY, INFORMATIVE, AMERICAN REICH: A NEW AGE OF HATE", 137],
+		['assassin.mp3', "3 MALES, FANTASY, SCOTTISH, ASSASSIN'S APPRENTICE", 173],
+		['club.mp3', "1 MALE 1 FEMALE, ROMANCE, AWKWARD, ATTACHMENTS", 50],
+		['emails.mp3', "2 FEMALE, COMEDY, ATTACHMENTS", 126],
+		['gio.mp3', "2 MALE, FICTION, FRENCH, GIOVANNI'S ROOM", 213],
+		['jade.mp3', "1M ADULT, URBAN FANTASY, ACTION, JADE CITY", 163],
+		['on_earth.mp3', "1M 1F, FICTION, VIETNAMESE, ON EARTH WE'RE BRIEFLY GORGEOUS", 18],
+		['the_sun_and_the_star.mp3', "3 MALE 1 FEMALE, CHILDREN'S FANTASY, LGBTQ", 111]
 	]
 	urls.sort((a, b) => {
 		if (a[1] > b[1]) return 1
@@ -93,13 +93,18 @@ function App() {
 			</div>
 			<div id="demos">
 				<div className='header'>demos</div>
+				<div>Description Guide: [characters description], [book genre], [additional information], [book title], [button to my favorite part of the clip]</div>
 				<ul className='info'>
 					{urls.map((u) => {
+
 						return (
 							<li>
 								<figure>
-									<figcaption>{u[1]}</figcaption>
-									<audio controls src={u[0]}></audio>
+									<figcaption>{u[1]}, <button onClick={(e) => {
+										console.log("." + u[0].split(".")[0]);
+										document.querySelector("." + u[0].split(".")[0]).currentTime = u[2];
+									}} >my favorite part</button></figcaption>
+									<audio className={u[0].split(".")[0]} controls src={u[0]}></audio>
 								</figure>
 							</li>
 						)
