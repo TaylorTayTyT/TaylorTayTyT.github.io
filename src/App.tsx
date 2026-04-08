@@ -97,14 +97,27 @@ function App() {
 				<ul className='info'>
 					{urls.map((u) => {
 
+						let className = "";
+						if (typeof u[0] === 'string' && u[0].split(".")) {
+							className += u[0].split(".")[0];
+						}
+						let srcName = "";
+						if (typeof u[0] === 'string') {
+							srcName += u[0];
+						}
 						return (
 							<li>
 								<figure>
-									<figcaption>{u[1]}, <button onClick={(e) => {
-										console.log("." + u[0].split(".")[0]);
-										document.querySelector("." + u[0].split(".")[0]).currentTime = u[2];
+									<figcaption>{u[1]}, <button onClick={() => {
+										let className = ".";
+										if (typeof u[0] === 'string' && u[0].split(".")) {
+											className += u[0].split(".")[0];
+										}
+										console.log(className);
+										const aud_elem: any = document.querySelector(className);
+										aud_elem.currentTime = u[2];
 									}} >my favorite part</button></figcaption>
-									<audio className={u[0].split(".")[0]} controls src={u[0]}></audio>
+									<audio className={className} controls src={srcName}></audio>
 								</figure>
 							</li>
 						)
