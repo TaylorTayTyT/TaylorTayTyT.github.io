@@ -91,7 +91,3 @@ img.work {
 .works {
 	gap: 1rem;
 }
-
-img.work:hover {
-	width: 11rem;
-}
