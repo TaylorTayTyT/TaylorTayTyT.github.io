@@ -7,14 +7,14 @@ function App() {
 
 
 	const urls = [
-		['american.mp3', "HISTORY, INFORMATIVE, AMERICAN REICH: A NEW AGE OF HATE", 137],
-		['assassin.mp3', "3 MALES, FANTASY, SCOTTISH, ASSASSIN'S APPRENTICE", 173],
-		['club.mp3', "1 MALE 1 FEMALE, ROMANCE, AWKWARD, ATTACHMENTS", 50],
-		['emails.mp3', "2 FEMALE, COMEDY, ATTACHMENTS", 126],
-		['gio.mp3', "2 MALE, FICTION, FRENCH, GIOVANNI'S ROOM", 213],
-		['jade.mp3', "1M ADULT, URBAN FANTASY, ACTION, JADE CITY", 163],
-		['on_earth.mp3', "1M 1F, FICTION, VIETNAMESE, ON EARTH WE'RE BRIEFLY GORGEOUS", 18],
-		['the_sun_and_the_star.mp3', "3 MALE 1 FEMALE, CHILDREN'S FANTASY, LGBTQ", 111]
+		['Taylor_Nguyen_Nonfiction_American_Reich.mp3', "HISTORY, INFORMATIVE, AMERICAN REICH: A NEW AGE OF HATE", 137],
+		['Taylor_Nguyen_Fantasy_Assassins_Apprentice.mp3', "3 MALES, FANTASY, SCOTTISH, ASSASSIN'S APPRENTICE", 173],
+		['Taylor_Nguyen_Romance_Attachments.mp3', "1 MALE 1 FEMALE, ROMANCE, AWKWARD, ATTACHMENTS", 50],
+		['Taylor_Nguyen_Comedy_Attachments.mp3', "2 FEMALE, COMEDY, ATTACHMENTS", 126],
+		['Taylor_Nguyen_Fiction_Giovannis_Room.mp3', "2 MALE, FICTION, FRENCH, GIOVANNI'S ROOM", 213],
+		['Taylor_Nguyen_Urban_Fantasy_Jade_City.mp3', "1M ADULT, URBAN FANTASY, ACTION, JADE CITY", 163],
+		['Taylor_Nguyen_Fiction_On_Earth_Were_Briefly_Gorgeous.mp3', "1M 1F, FICTION, VIETNAMESE, ON EARTH WE'RE BRIEFLY GORGEOUS", 18],
+		['Taylor_Nguyen_Children_Fantasy_The_Sun_and_the_Star.mp3', "3 MALE 1 FEMALE, CHILDREN'S FANTASY, LGBTQ", 111]
 	]
 	urls.sort((a, b) => {
 		if (a[1] > b[1]) return 1
@@ -118,6 +118,7 @@ function App() {
 										aud_elem.currentTime = u[2];
 									}} >my favorite part</button></figcaption>
 									<audio className={className} controls src={srcName}></audio>
+									<a href={srcName} download={srcName}><img className='download' src='/download.png'></img></a>
 								</figure>
 							</li>
 						)

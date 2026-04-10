@@ -91,3 +91,7 @@ img.work {
 .works {
 	gap: 1rem;
 }
+
+img.download {
+	width: 2rem;
+}
