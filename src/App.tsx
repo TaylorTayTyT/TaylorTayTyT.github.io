@@ -7,7 +7,7 @@ function App() {
 
 
 	const urls = [
-		['Taylor_Nguyen_Nonfiction_American_Reich.mp3', "HISTORY, INFORMATIVE, AMERICAN REICH: A NEW AGE OF HATE", 137],
+		['Taylor_Nguyen_Nonfiction_American_Reich.mp3', "HISTORY, INFORMATIVE, AMERICAN REICH: A NEW AGE OF HATE", 92],
 		['Taylor_Nguyen_Fantasy_Assassins_Apprentice.mp3', "3 MALES, FANTASY, SCOTTISH, ASSASSIN'S APPRENTICE", 173],
 		['Taylor_Nguyen_Romance_Attachments.mp3', "1 MALE 1 FEMALE, ROMANCE, AWKWARD, ATTACHMENTS", 50],
 		['Taylor_Nguyen_Comedy_Attachments.mp3', "2 FEMALE, COMEDY, ATTACHMENTS", 126],
