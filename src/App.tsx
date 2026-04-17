@@ -7,14 +7,13 @@ function App() {
 
 
 	const urls = [
-		['Taylor_Nguyen_Nonfiction_American_Reich.mp3', "HISTORY, INFORMATIVE, AMERICAN REICH: A NEW AGE OF HATE", 92],
-		['Taylor_Nguyen_Fantasy_Assassins_Apprentice.mp3', "3 MALES, FANTASY, SCOTTISH, ASSASSIN'S APPRENTICE", 173],
-		['Taylor_Nguyen_Romance_Attachments.mp3', "1 MALE 1 FEMALE, ROMANCE, AWKWARD, ATTACHMENTS", 50],
-		['Taylor_Nguyen_Comedy_Attachments.mp3', "2 FEMALE, COMEDY, ATTACHMENTS", 126],
-		['Taylor_Nguyen_Fiction_Giovannis_Room.mp3', "2 MALE, FICTION, FRENCH, GIOVANNI'S ROOM", 213],
-		['Taylor_Nguyen_Urban_Fantasy_Jade_City.mp3', "1M ADULT, URBAN FANTASY, ACTION, JADE CITY", 163],
-		['Taylor_Nguyen_Fiction_On_Earth_Were_Briefly_Gorgeous.mp3', "1M 1F, FICTION, VIETNAMESE, ON EARTH WE'RE BRIEFLY GORGEOUS", 18],
-		['Taylor_Nguyen_Children_Fantasy_The_Sun_and_the_Star.mp3', "3 MALE 1 FEMALE, CHILDREN'S FANTASY, LGBTQ", 111]
+		['Taylor_Nguyen_Nonfiction_American_Reich.mp3', "HISTORY, INFORMATIVE, AMERICAN REICH: A NEW AGE OF HATE", 144],
+		['Taylor_Nguyen_Fantasy_Assassins_Apprentice.mp3', "3 MALES, FANTASY, SCOTTISH, ASSASSIN'S APPRENTICE", 134],
+		['Taylor_Nguyen_Comedy_Attachments.mp3', "2 FEMALES, COMEDY, ATTACHMENTS", 65],
+		['Taylor_Nguyen_Fiction_Giovannis_Room.mp3', "2 MALES, FICTION, FRENCH, GIOVANNI'S ROOM", 86],
+		['Taylor_Nguyen_Urban_Fantasy_Jade_City.mp3', "1 MALE ADULT, URBAN FANTASY, ACTION, JADE CITY", 247],
+		['Taylor_Nguyen_Fiction_The_Emperor_Of_Gladness.mp3', "2 MALES 1 FEMALE, FICTION, VIETNAMESE, THE EMPEROR OF GLADNESS", 0],
+		['Taylor_Nguyen_Children_Fantasy_The_Sun_and_the_Star.mp3', "3 MALES 1 FEMALE, CHILDREN'S FANTASY, LGBTQ", 123]
 	]
 	urls.sort((a, b) => {
 		if (a[1] > b[1]) return 1
@@ -55,7 +54,7 @@ function App() {
 							<li><b>Software:</b> Reaper </li>
 							<li><b>Environment:</b> Professionally Treated Vocal Booth</li>
 							<li><b>Audio Interface:</b> Focusrite Scarlett Solo</li>
-							<li><b>Languages: </b>English, Vietnamese, Mandarin</li>
+							<li><b>Languages: </b>English, Vietnamese <i>(Conversational)</i>, Mandarin <i>(HSK5)</i></li>
 						</ul>
 					</div>
 					<div id="contact">
@@ -113,18 +112,20 @@ function App() {
 										if (typeof u[0] === 'string' && u[0].split(".")) {
 											className += u[0].split(".")[0];
 										}
-										console.log(className);
+
 										const aud_elem: any = document.querySelector(className);
 										aud_elem.currentTime = u[2];
-									}} >my favorite part</button></figcaption>
+									}} >{u[2] === 0 ? "the beginning is my favorite" : "my favorite part"}</button></figcaption>
+
 									<audio className={className} controls src={srcName}></audio>
-									<a href={srcName} download={srcName}><img className='download' src='/download.png'></img></a>
+									<a title='download this sample' href={srcName} download={srcName}><img className='download' src='/download.png'></img></a>
 								</figure>
 							</li>
 						)
 					})}
 
 				</ul>
+				<div>Downloaded samples will have the filename format:</div><div> <b>Taylor_Nguyen_Genre_Title.mp3</b></div>
 			</div>
 		</div>
 	)
