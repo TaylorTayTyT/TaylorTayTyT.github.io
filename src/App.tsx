@@ -64,7 +64,7 @@ function App() {
 						<ul className='info'>
 							<li>taylornguyen904@gmail.com</li>
 							<li>
-								<a href="https://www.acx.com/narrator?p=A2OS7K3L2TWAMS">https://www.acx.com/narrator?p=A2OS7K3L2TWAMS</a>
+								<a target="_blank" href="https://www.acx.com/narrator?p=A2OS7K3L2TWAMS">https://www.acx.com/narrator?p=A2OS7K3L2TWAMS</a>
 							</li>
 						</ul>
 					</div>
@@ -73,7 +73,7 @@ function App() {
 						<div className='info works'>
 							{works.map((item) => {
 								return (
-									<a href={item[1]}><img className="work" src={item[0]}></img></a>
+									<a target='_blank' href={item[1]}><img className="work" src={item[0]}></img></a>
 								)
 							})}
 						</div>
@@ -83,7 +83,7 @@ function App() {
 						<div className='info works'>
 							{upcoming.map((item) => {
 								return (
-									<a href={item[1]}><img src={item[0]} className='work'></img></a>
+									<a target="_blank" href={item[1]}><img src={item[0]} className='work'></img></a>
 								)
 							})}
 						</div>
@@ -118,7 +118,7 @@ function App() {
 									}} >{u[2] === 0 ? "the beginning is my favorite" : "my favorite part"}</button></figcaption>
 
 									<audio className={className} controls src={srcName}></audio>
-									<a title='download this sample' href={srcName} download={srcName}><img className='download' src='/download.png'></img></a>
+									<a target="_blank" title='download this sample' href={srcName} download={srcName}><img className='download' src='/download.png'></img></a>
 								</figure>
 							</li>
 						)
@@ -126,7 +126,11 @@ function App() {
 
 				</ul>
 				<div>Downloaded samples will have the filename format:</div><div> <b>Taylor_Nguyen_Genre_Title.mp3</b></div>
+				<br></br>
+				<div className='header'>Associations</div>
+				<a target='_blank' href='https://pronarrators.org/'><img src='/pana.jpg'></img></a>
 			</div>
+
 		</div>
 	)
 }
