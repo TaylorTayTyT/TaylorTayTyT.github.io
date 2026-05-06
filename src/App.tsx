@@ -8,9 +8,9 @@ function App() {
 
 	const urls = [
 		['Taylor_Nguyen_Nonfiction_American_Reich.mp3', "HISTORY, INFORMATIVE, AMERICAN REICH: A NEW AGE OF HATE", 144],
-		['Taylor_Nguyen_Fantasy_Assassins_Apprentice.mp3', "3 MALES, FANTASY, SCOTTISH, ASSASSIN'S APPRENTICE", 134],
+		['Taylor_Nguyen_Fantasy_Assassins_Apprentice.mp3', "3 MALES, FANTASY, SCOTTISH, ASSASSIN'S APPRENTICE", 0],
 		['Taylor_Nguyen_Comedy_Attachments.mp3', "2 FEMALES, COMEDY, ATTACHMENTS", 65],
-		['Taylor_Nguyen_Fiction_Giovannis_Room.mp3', "2 MALES, FICTION, FRENCH, GIOVANNI'S ROOM", 86],
+		['Taylor_Nguyen_Fiction_Giovannis_Room.mp3', "2 MALES, FICTION, FRENCH, GIOVANNI'S ROOM", 0],
 		['Taylor_Nguyen_Urban_Fantasy_Jade_City.mp3', "1 MALE ADULT, URBAN FANTASY, ACTION, JADE CITY", 247],
 		['Taylor_Nguyen_Fiction_The_Emperor_Of_Gladness.mp3', "2 MALES 1 FEMALE, FICTION, VIETNAMESE, THE EMPEROR OF GLADNESS", 0],
 		['Taylor_Nguyen_Children_Fantasy_The_Sun_and_the_Star.mp3', "3 MALES 1 FEMALE, CHILDREN'S FANTASY, LGBTQ", 123]
@@ -23,13 +23,15 @@ function App() {
 
 	const works = [
 		["/if you touch the sun.jpg", "https://www.amazon.com/dp/B0FTJQQ9LT"],
-		["/maranther.jpg", "https://www.amazon.com/dp/B0044DFA1S"],
+
 		["/M&S Audio.jpg", "https://www.audible.com/pd/B0GM3FSHD5?qid=1770517816&sr=1-1&ref_pageloadid=not_applicable&pf_rd_p=83218cca-c308-412f-bfcf-90198b687a2f&pf_rd_r=WVE85H73D88WHPG9GTS6&plink=Pn0gtZYjhRIN0LSP&pageLoadId=0L5njSNiA6saZbpu&creativeId=0d6f6720-f41c-457e-a42b-8c8dceb62f2c&ref=a_search_c3_lProduct_1_1"],
-		["/Haunted_Hearts.jpg", "https://www.audible.com/pd/Haunted-Hearts-Audiobook/B0GHSLP2SH?qid=1770268669&sr=1-1&ref_pageloadid=not_applicable&pf_rd_p=83218cca-c308-412f-bfcf-90198b687a2f&pf_rd_r=MMS796Y1T8ACKAP4DHA6&plink=95QMcA9DbvsSt7aa&pageLoadId=KqWCYyC4KpFwoCIP&creativeId=0d6f6720-f41c-457e-a42b-8c8dceb62f2c&ref=a_search_c3_lProduct_1_1"]
+		["/Haunted_Hearts.jpg", "https://www.audible.com/pd/Haunted-Hearts-Audiobook/B0GHSLP2SH?qid=1770268669&sr=1-1&ref_pageloadid=not_applicable&pf_rd_p=83218cca-c308-412f-bfcf-90198b687a2f&pf_rd_r=MMS796Y1T8ACKAP4DHA6&plink=95QMcA9DbvsSt7aa&pageLoadId=KqWCYyC4KpFwoCIP&creativeId=0d6f6720-f41c-457e-a42b-8c8dceb62f2c&ref=a_search_c3_lProduct_1_1"],
+		["/pebblestone.jpg", "https://www.audible.com/pd/The-Pebblestone-Massacre-Audiobook/B0GYBC32FX"]
 	]
 
+
 	const upcoming = [
-		["/pebblestone.jpg", "https://www.amazon.com/dp/B0GHZNK2GB"]
+		["/maranther.jpg", "https://www.amazon.com/dp/B0044DFA1S"],
 
 	]
 
@@ -128,7 +130,9 @@ function App() {
 				<div>Downloaded samples will have the filename format:</div><div> <b>Taylor_Nguyen_Genre_Title.mp3</b></div>
 				<br></br>
 				<div className='header'>Associations</div>
-				<a target='_blank' href='https://pronarrators.org/'><img src='/pana.jpg'></img></a>
+				<a target='_blank' href='https://pronarrators.org/'><img className='association' src='/pana.jpg'></img></a>
+				<br />
+				<a target='_blank' href='https://www.audiopub.org/'><img className='association' src='/apa.png'></img></a>
 			</div>
 
 		</div>

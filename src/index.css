@@ -52,12 +52,23 @@ ul {
 	width: 70%
 }
 
+@media screen and (width >900px) {
+	.association {
+		width: 60%;
+	}
+}
+
 @media screen and (width <=900px) {
 	#about {
 		border: none;
 		margin: auto;
 		padding-right: 1rem;
 		width: 70%
+	}
+
+	.association {
+		width: 100%;
+
 	}
 }
 
@@ -74,9 +85,15 @@ ul {
 	}
 }
 
+
+
 #demos {
 	padding-left: 1rem;
 }
+
+
+
+
 
 figcaption {
 	font-size: 1rem;
