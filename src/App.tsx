@@ -94,7 +94,7 @@ function App() {
 			</div>
 			<div id="demos">
 				<div className='header'>demos</div>
-				<div>Description Guide: [characters description], [book genre], [additional information], [book title], [button to my favorite part of the clip]</div>
+				<div>Description Guide: [characters description], [book genre], [additional information], [book title] </div>
 				<ul className='info'>
 					{urls.map((u) => {
 
@@ -109,15 +109,7 @@ function App() {
 						return (
 							<li>
 								<figure>
-									<figcaption>{u[1]}, <button onClick={() => {
-										let className = ".";
-										if (typeof u[0] === 'string' && u[0].split(".")) {
-											className += u[0].split(".")[0];
-										}
-
-										const aud_elem: any = document.querySelector(className);
-										aud_elem.currentTime = u[2];
-									}} >{u[2] === 0 ? "the beginning is my favorite" : "my favorite part"}</button></figcaption>
+									<figcaption>{u[1]} </figcaption>
 
 									<audio className={className} controls src={srcName}></audio>
 									<a target="_blank" title='download this sample' href={srcName} download={srcName}><img className='download' src='/download.png'></img></a>
