@@ -13,7 +13,9 @@ function App() {
 		['Taylor_Nguyen_Fiction_Giovannis_Room.mp3', "2 MALES, FICTION, FRENCH, GIOVANNI'S ROOM", 0],
 		['Taylor_Nguyen_Urban_Fantasy_Jade_City.mp3', "1 MALE ADULT, URBAN FANTASY, ACTION, JADE CITY", 247],
 		['Taylor_Nguyen_Fiction_The_Emperor_Of_Gladness.mp3', "2 MALES 1 FEMALE, FICTION, VIETNAMESE, THE EMPEROR OF GLADNESS", 0],
-		['Taylor_Nguyen_Children_Fantasy_The_Sun_and_the_Star.mp3', "3 MALES 1 FEMALE, CHILDREN'S FANTASY, LGBTQ", 123]
+		['Taylor_Nguyen_Children_Fantasy_The_Sun_and_the_Star.mp3', "3 MALES 1 FEMALE, CHILDREN'S FANTASY, LGBTQ", 123],
+		["Taylor_Nguyen_Fiction_Portrait_of_a_Thief.mp3", "2 MALES 1 FEMALE, FICTION, MANDARIN, PORTRAIT OF A THIEF", 0],
+		["Taylor_Nguyen_Romance_His_Home.mp3", "3 MALES, ROMANCE, BRITISH GENERAL, HIS HOME", 0]
 	]
 	urls.sort((a, b) => {
 		if (a[1] > b[1]) return 1
@@ -57,6 +59,7 @@ function App() {
 							<li><b>Environment:</b> Professionally Treated Vocal Booth</li>
 							<li><b>Audio Interface:</b> Focusrite Scarlett Solo</li>
 							<li><b>Languages: </b>English, Vietnamese <i>(Conversational)</i>, Mandarin <i>(HSK5)</i></li>
+							<li><b>Accents/Dialects:</b>French, Scottish (General), British (General), Vietnamese, Asian (General)</li>
 						</ul>
 					</div>
 					<div id="contact">
