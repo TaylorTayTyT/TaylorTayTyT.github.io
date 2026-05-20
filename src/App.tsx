@@ -15,7 +15,8 @@ function App() {
 		['Taylor_Nguyen_Fiction_The_Emperor_Of_Gladness.mp3', "2 MALES 1 FEMALE, FICTION, VIETNAMESE, THE EMPEROR OF GLADNESS", 0],
 		['Taylor_Nguyen_Children_Fantasy_The_Sun_and_the_Star.mp3', "3 MALES 1 FEMALE, CHILDREN'S FANTASY, LGBTQ", 123],
 		["Taylor_Nguyen_Fiction_Portrait_of_a_Thief.mp3", "2 MALES 1 FEMALE, FICTION, MANDARIN, PORTRAIT OF A THIEF", 0],
-		["Taylor_Nguyen_Romance_His_Home.mp3", "3 MALES, ROMANCE, BRITISH GENERAL, HIS HOME", 0]
+		["Taylor_Nguyen_Romance_His_Home.mp3", "3 MALES, ROMANCE, BRITISH GENERAL, HIS HOME", 0],
+		["Taylor_Nguyen_Foreword_The_Song_of_Kieu.mp3", "SOCIAL SCIENCE, INFORMATIVE, VIETNAMESE, THE SONG OF KIEU", 0]
 	]
 	urls.sort((a, b) => {
 		if (a[1] > b[1]) return 1
