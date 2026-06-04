@@ -51,3 +51,8 @@ body {
 .read-the-docs {
 	color: #888;
 }
+
+.infobox {
+	position: absolute;
+	background-color: red;
+}

@@ -1,10 +1,11 @@
 
+import { useState } from 'react';
 import './App.css';
 
 
 
 function App() {
-
+	const [effect, SetEffect] = useState(true);
 
 	const urls = [
 		['Taylor_Nguyen_Nonfiction_American_Reich.mp3', "HISTORY, INFORMATIVE, AMERICAN REICH: A NEW AGE OF HATE", 144],
@@ -38,7 +39,10 @@ function App() {
 
 	]
 
-
+	const aSentence = ["He", "has", "a", "youthful", "voice", "that", "can", "portray", "natural", "character", "growth"];
+	const baseFontSize = 1;
+	const rotatingSentence = ["characters", "that", "brings", "an", "environment", "to", "life", "."];
+	const rotations = [2, -2, -5, 5];
 	return (
 		<div id="container">
 			<div id="about">
@@ -46,9 +50,10 @@ function App() {
 					about me
 				</div>
 				<div className='info'>
-					Hi, I'm Taylor Nguyen! I'm an audiobook narrator/voiceover artist.
-					Look at my demos to see how my voice could fit into your project!
+					{effect ?
+						<><span style={{ fontWeight: 'bold', fontSize: "5rem" }}>Taylor</span> (he/him) is a <span style={{ fontSize: "3rem" }}><span style={{ color: "#C8102E" }}>Vietnamese</span>-<span style={{ color: "#cea70c" }}>American</span></span> audiobook narrator dedicated to entertaining and authentic storytelling. {aSentence.map((word, idx) => <span style={{ fontSize: baseFontSize + 0.25 * idx + "rem" }}>{word} </span>)}while maintaining an acoustically <i>diverse</i> arsenal of <div style={{ display: "inline-flex", gap: "0.5rem" }}>{rotatingSentence.map((word, idx) => <div style={{ display: "inline-block", rotate: rotations[idx % rotations.length] + "deg" }}><b>{word + " "}</b></div>)}</div>While not narrating, Taylor enjoys <span className='long_cang'>drinking tea</span>, <div className='retro' style={{ display: "inline-block" }}>playing guitar</div>, and (of course) reading <div className='books'><span>b</span><span>o</span>o<span>k</span><span>s</span></div> (<span className='butcherman_regular' >yes, listening counts as reading</span>)!</> : <>Taylor(he/him) is a Vietnamese-American audiobook narrator dedicated to entertaining and authentic storytelling. He has a youthful voice that can portray natural character growth, while maintaining an acoustically diverse arsenal of characters that brings an environment to life. While not narrating, Taylor enjoys drinking tea, playing guitar, and (of course) reading books (yes, listening counts as reading)!</>}
 				</div>
+				<button onClick={() => SetEffect(!effect)}>click here to toggle effects above if it's too hard to read</button>
 				<div id="more_info">
 					<div id="setup">
 						<div className='header'>
@@ -60,7 +65,7 @@ function App() {
 							<li><b>Environment:</b> Professionally Treated Vocal Booth</li>
 							<li><b>Audio Interface:</b> Focusrite Scarlett Solo</li>
 							<li><b>Languages: </b>English, Vietnamese <i>(Conversational)</i>, Mandarin <i>(HSK5)</i></li>
-							<li><b>Accents/Dialects:</b>French, Scottish (General), British (General), Vietnamese, Asian (General)</li>
+							<li><b>Accents/Dialects: </b>French, Scottish (General), British (General), Vietnamese, Asian (General)</li>
 						</ul>
 					</div>
 					<div id="contact">
@@ -129,9 +134,15 @@ function App() {
 				<a target='_blank' href='https://pronarrators.org/'><img className='association' src='/pana.jpg'></img></a>
 				<br />
 				<a target='_blank' href='https://www.audiopub.org/'><img className='association' src='/apa.png'></img></a>
+				<div className='header'>Social Media</div>
+				<div className='socials'>
+					<a target='_blank' href='https://www.tiktok.com/@unemployed_reader'><img className='social_media_logo' src='/tik_tok_logo.png'></img></a>
+					<a target='_blank' href='https://www.instagram.com/unemployed_readerr/'><img className='social_media_logo' src='/ig_logo.png'></img></a>
+					<a target='_blank' href='https://www.youtube.com/@unemployedreader'><img className='social_media_logo' src='/yt_logo.png'></img></a>
+				</div>
 			</div>
 
-		</div>
+		</div >
 	)
 }
 
