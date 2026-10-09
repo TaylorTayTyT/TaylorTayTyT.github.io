@@ -78,10 +78,7 @@ function App() {
 							contact
 						</div>
 						<ul className='info'>
-							<li>taylor@taylorthenguyen.com</li>
-							<li>
-								<a target="_blank" href="https://www.acx.com/narrator?p=A2OS7K3L2TWAMS">https://www.acx.com/narrator?p=A2OS7K3L2TWAMS</a>
-							</li>
+							<li><a href='mailto:taylor@taylorthenguyen.com'>taylor@taylorthenguyen.com</a></li>
 						</ul>
 					</div>
 					<div id="recent_work">
