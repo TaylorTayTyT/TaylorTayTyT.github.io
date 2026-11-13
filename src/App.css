@@ -1,58 +1,253 @@
-#root {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 2rem;
-	text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Antonio&family=Sree+Krushnadevaraya&family=Staatliches&display=swap");
+
+:root {
+	--ink: #000000;
+	--paper: #ffffff;
+	--tint: rgba(112, 66, 20, 0.1);
+	--placeholder: #b1b2b5;
+	--serif: "Sree Krushnadevaraya", Georgia, "Times New Roman", serif;
+	--condensed: "Antonio", "Arial Narrow", Impact, sans-serif;
+	--display: "Staatliches", Impact, "Arial Narrow", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 body {
-	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0 100%), url("/public/me.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
+	margin: 0;
+	background: var(--paper);
+	color: var(--ink);
+}
+
+.page {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	min-height: 100vh;
+	font-family: var(--serif);
+	background: var(--paper);
+}
+
+.panel {
+	container-type: inline-size;
+	padding: 5cqw 0 6cqw;
+	padding-top: 0.5rem;
+}
+
+/* ---------- Left panel: bio ---------- */
+.panel--bio {
+	background: var(--tint);
+}
+
+.listen {
+	margin: 0;
+	text-align: center;
+	font-weight: 400;
+	font-size: clamp(34px, 7.5cqw, 72px);
+	line-height: 1.2;
+}
+
+.bar {
+	background: var(--ink);
+	color: var(--paper);
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: 400;
+}
+
+.bar--logos {
+	margin-top: 1.2cqw;
+	padding: 1.5cqw 0;
+	font-size: clamp(14px, 2.5cqw, 24px);
+	line-height: 1.2;
+}
+
+.name {
+	margin: 0cqw 0 0;
+	text-align: center;
+	font-weight: 400;
+	font-size: clamp(76px, 20.8cqw, 200px);
+	line-height: 0.86;
+}
+
+.bar--tagline {
+	margin-top: 10cqw;
+	padding: 1.5cqw 0;
+	font-size: clamp(13px, 2.5cqw, 24px);
+	line-height: 1.2;
+}
+
+.bio-row {
+	display: grid;
+	grid-template-columns: 33.1% 1fr;
+	column-gap: 2.2cqw;
+	padding: 0 4.6cqw 0 8.8cqw;
+	margin-top: 3.2cqw;
+	align-items: start;
+}
+
+.photo {
+	margin: 0;
+	aspect-ratio: 318 / 507;
+	background: var(--placeholder);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: clamp(14px, 3.33cqw, 32px);
+	overflow: hidden;
+}
+
+.photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.tags {
+	margin: 1.2cqw 0 0;
+	color: rgba(0, 0, 0, 0.4);
+	font-size: clamp(10px, 1.67cqw, 16px);
+	line-height: 1;
+}
+
+.bio {
+	margin: 0;
+	font-size: clamp(14px, 3.33cqw, 32px);
+	line-height: 0.92;
+}
+
+.gallery {
+	display: flex;
+	gap: 3.1cqw;
+	margin-top: 2.4cqw;
+}
+
+.gallery__item {
+
+	height: 5cqw;
 
 
 }
 
-.logo {
-	height: 6em;
-	padding: 1.5em;
-	will-change: filter;
-	transition: filter 300ms;
+.gallery__item>img {
+	width: 3rem;
 }
 
-.logo:hover {
-	filter: drop-shadow(0 0 2em #646cffaa);
+/* ---------- Right panel: samples ---------- */
+.panel--samples {
+	background: var(--paper);
 }
 
-.logo.react:hover {
-	filter: drop-shadow(0 0 2em #61dafbaa);
+.kicker,
+.subhead {
+	margin: 0;
+	text-align: center;
+	font-weight: 400;
+	font-size: clamp(18px, 5.2cqw, 50px);
+	line-height: 1.2;
 }
 
-@keyframes logo-spin {
-	from {
-		transform: rotate(0deg);
+.samples-bar {
+	background: var(--ink);
+	color: var(--paper);
+	width: 90%;
+	margin: 1.2cqw auto 0;
+	text-align: center;
+}
+
+.samples-bar h2 {
+	margin: 0;
+	padding-bottom: 5cqw;
+	font-weight: 400;
+	font-size: clamp(54px, 15.6cqw, 150px);
+	line-height: 1;
+
+}
+
+.subhead {
+	margin-top: 1.2cqw;
+}
+
+.narrator-bar {
+	background: var(--ink);
+	color: var(--paper);
+	width: 90%;
+	margin: 1.2cqw auto 0;
+	padding: 1cqw 0;
+	text-align: center;
+	font-family: var(--display);
+	font-weight: 400;
+	font-size: clamp(26px, 7.8cqw, 75px);
+	line-height: 1.1;
+	text-transform: uppercase;
+}
+
+.samples {
+	list-style: none;
+	margin: 3.4cqw 0 0;
+	padding: 0;
+	display: grid;
+	gap: 2.2cqw;
+	justify-content: center;
+
+
+}
+
+.samples>li>figure>figcaption {
+	font-size: 1rem;
+}
+
+.samples>li>figure>a>img {
+	width: 2rem;
+}
+
+.sample {
+	text-align: center;
+}
+
+.sample__title {
+	margin: 0;
+	font-family: var(--condensed);
+	font-weight: 400;
+	font-size: clamp(20px, 5.2cqw, 50px);
+	line-height: 1.1;
+}
+
+.sample__player {
+	display: block;
+	width: 80%;
+	max-width: 80%;
+	height: clamp(20px, 4.17cqw, 40px);
+	margin: 0.4cqw auto 0;
+	background: var(--placeholder);
+	border: 0;
+}
+
+#orgs {
+	display: flex;
+	justify-content: space-around;
+}
+
+#orgs>a>img {
+	height: 2.5rem;
+}
+
+audio {
+	width: 90%
+}
+
+
+audio.sample__player {
+	background: transparent;
+}
+
+/* ---------- Stack on narrow screens ---------- */
+@media (max-width: 800px) {
+	.page {
+		grid-template-columns: 1fr;
 	}
-
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	a:nth-of-type(2) .logo {
-		animation: logo-spin infinite 20s linear;
-	}
-}
-
-.card {
-	padding: 2em;
-}
-
-.read-the-docs {
-	color: #888;
-}
-
-.infobox {
-	position: absolute;
-	background-color: red;
 }
