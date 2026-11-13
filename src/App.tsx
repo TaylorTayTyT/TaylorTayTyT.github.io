@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+
 import './App.css';
 
 
@@ -23,18 +23,7 @@ const SAMPLES = [
 const SOCIALS = ["tik_tok_logo.png", "ig_logo.png", "yt_logo.png"];
 const SOCIALS_LINK = ["https://tiktok.com/@unemployed_reader", "https://www.instagram.com/unemployed_readerr/", "https://www.youtube.com/@unemployedreader"];
 
-function SampleRow(title: string, src: string) {
-	return (
-		<li className="sample">
-			<h3 className="sample__title">{title}</h3>
-			{src ? (
-				<audio className="sample__player" controls preload="none" src={src} aria-label={title} />
-			) : (
-				<div className="sample__player" role="img" aria-label={`${title} audio placeholder`} />
-			)}
-		</li>
-	);
-}
+
 
 function App() {
 	return (
