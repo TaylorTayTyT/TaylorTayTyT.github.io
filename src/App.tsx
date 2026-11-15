@@ -22,8 +22,8 @@ const SAMPLES = [
 
 ]
 
-const SOCIALS = ["tik_tok_logo.png", "ig_logo.png", "yt_logo.png"];
-const SOCIALS_LINK = ["https://tiktok.com/@unemployed_reader", "https://www.instagram.com/unemployed_readerr/", "https://www.youtube.com/@unemployedreader"];
+const SOCIALS = ["tik_tok_logo.png", "ig_logo.png", "yt_logo.png", "audible.png"];
+const SOCIALS_LINK = ["https://tiktok.com/@unemployed_reader", "https://www.instagram.com/unemployed_readerr/", "https://www.youtube.com/@unemployedreader", "https://www.audible.com/search?searchNarrator=Taylor-Nguyen"];
 
 
 
