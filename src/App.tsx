@@ -10,7 +10,9 @@ const TAGS =
 	"tags: Asian American, Vietnamese, queer, lion dance, tea, cat, baking, computer, computer science, Mandarin, Vietnamese, Chinese language, youthful";
 //format is src, title, descriptor
 const SAMPLES = [
-	["/Taylor_Nguyen_Children_Fantasy_The_Sun_and_the_Star.mp3", "Children's Fantasy, LGBTQ+, 3M 1F, The Sun and the Star"],
+	["/Taylor_Nguyen_Children_Fantasy_The_Sun_And_The_Star.mp3", "Children's Fantasy, LGBTQ+, 3M 1F, The Sun and the Star"],
+	["/Taylor_Nguyen_Children_Fantasy_Aru_Shah.mp3", "Children's Fantasy, 3F 1M, Aru Shah"],
+	["/Taylor_Nguyen_LitRPG_ORV.mp3", "LitRPG, 2M 1F, ORV"],
 	["/Taylor_Nguyen_Fantasy_Tehanu.mp3", "Fantasy, 1M 1F, Scottish (General Medieval), British (General), Philosophical Conversation, Tehanu"],
 	["/Taylor_Nguyen_Fiction_Giovannis_Room.mp3", "Fiction, LGBTQ+, 2M, French, Messy Breakup, Giovanni's Room"],
 	["/Taylor_Nguyen_Romace_A_Pho_Love_Story.mp3", "Fiction, 2M 1F, Vietnamese, Fight With Parents, A Pho Love Story"],
