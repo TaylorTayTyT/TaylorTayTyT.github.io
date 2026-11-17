@@ -30,6 +30,11 @@ body {
 	background: var(--paper);
 }
 
+.email {
+	text-decoration: underline;
+	color: white;
+}
+
 .panel {
 	container-type: inline-size;
 	padding: 5cqw 0 6cqw;

@@ -18,6 +18,7 @@ const SAMPLES = [
 	["/Taylor_Nguyen_Romace_A_Pho_Love_Story.mp3", "Fiction, 2M 1F, Vietnamese, Fight With Parents, A Pho Love Story"],
 	["/Taylor_Nguyen_Romance_But_Love_Is_A_Voice_On_The_Wind.mp3", "Romance, 3M, LGBTQ+, British (General), Making the First Romantic Move, But Love Is A Voice on the Wind"],
 	["/Taylor_Nguyen_Erotica_The_Bride_Test.mp3", "Erotica, 1M 1F, Vietnamese, First Time, The Bride Test"],
+	["/Taylor_Nguyen_Nonfiction_The_Devil_in_the_White_City.mp3", "Nonfiction, The Devil in the White City"]
 
 
 ]
@@ -45,7 +46,7 @@ function App() {
 					Taylor Nguyen
 				</h1>
 
-				<div className="bar bar--tagline">Shoot me a message at taylor@taylorthenguyen.com!</div>
+				<div className="bar bar--tagline">Shoot me a message at <a className='email' title='mailto:taylor@taylorthenguyen.com' href='mailto:taylor@taylorthenguyen.com'>taylor@taylorthenguyen.com</a>!</div>
 
 				<div className="bio-row">
 					<div>
