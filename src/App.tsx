@@ -67,6 +67,13 @@ function App() {
 						</div>
 					</div>
 				</div>
+				<div className='news_heading'>
+					<h1 className='news'> <i>EXTRA EXTRA!</i></h1>
+				</div>
+				<div className='news_box'>
+					<img src='/SOVAS.png'></img>
+				</div>
+
 			</section>
 
 			{/* Right: samples */}

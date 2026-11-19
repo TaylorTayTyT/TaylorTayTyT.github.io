@@ -22,6 +22,19 @@ body {
 	color: var(--ink);
 }
 
+.news_box {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.news {
+	display: flex;
+	justify-content: center;
+	color: black;
+	font-size: 6rem;
+}
+
 .page {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
